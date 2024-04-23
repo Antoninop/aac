@@ -1,0 +1,19 @@
+name: Aacteams
+version: '1.0-SNAPSHOT'
+main: me.antonino.aacteams.Aacteams
+api-version: '1.20'
+
+commands:
+  team:
+    description: Gère les équipes
+    usage: /team [create <nom_de_l'équipe> | join <nom_de_l'équipe> | leave]
+    subcommands:
+      create:
+        description: Crée une nouvelle équipe
+        usage: /team create <nom_de_l'équipe>
+      join:
+        description: Rejoint une équipe existante
+        usage: /team join <nom_de_l'équipe>
+      leave:
+        description: Quitte l'équipe actuelle
+        usage: /team leave
